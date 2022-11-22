@@ -1,0 +1,15 @@
+{
+  "name": "SlidePlayer Downloader",
+  "description": "Skip share buttons when downloading a presentation",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+   "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://slideplayer.com/*","https://slideplayer.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
